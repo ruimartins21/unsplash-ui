@@ -1,0 +1,12 @@
+$font-context-size: 16px;
+
+// calc-rem: calculate the rem value based on the desired pixel
+// value versus a context value, usually the default font size
+@function calc-rem($target, $context: $font-context-size) {
+  @return $target / $context * 1rem;
+}
+
+// Shorthand redeclaration of the above
+@function cr($target, $context: $font-context-size) {
+  @return calc-rem($target, $context);
+}

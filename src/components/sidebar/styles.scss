@@ -1,0 +1,64 @@
+@import '../../styles';
+
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  height: 80px;
+  width: 100vw;
+  background-color: $gray2;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  &__logo {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+  }
+
+  @media (min-width: $md) {
+    flex-direction: column;
+    width: 90px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    &__logo {
+      top: 48px;
+      left: 28px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    .active {
+      background-color: $gray3;
+      border-radius: 10px;
+    }
+
+    @media (min-width: $md) {
+      flex-direction: column;
+
+      li {
+        padding: 21px;
+      }
+    }
+
+    li {
+      padding: 11px 12px;
+    }
+
+  }
+}

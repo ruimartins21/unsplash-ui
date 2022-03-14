@@ -1,0 +1,12 @@
+@import 'styles/';
+
+.content-wrapper{
+  text-align: center;
+ 
+  height: 100%;
+
+  @media (min-width: $md) {
+    padding-left: 90px;
+  }
+}
+
