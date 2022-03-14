@@ -7,6 +7,8 @@ import "./App.scss";
 import Home from "./pages/home";
 import { store, persistor } from "./store";
 import Sidebar from "./components/sidebar";
+import Favorites from "./pages/favorites";
+import NotFound from "./pages/notFound";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/photos/*" element={<Home />} />
+                <Route path="/favorites" element={<Favorites />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
           </main>

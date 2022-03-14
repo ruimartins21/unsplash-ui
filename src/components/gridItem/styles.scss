@@ -7,13 +7,13 @@
     opacity: 0.7;
     cursor: zoom-in;
 
-    & ~ .favourite-btn .favourite {
+    & ~ .favorite-btn .favorite {
       visibility: visible;
       opacity: 1;
     }
   }
 
-  .favourite-btn {
+  .favorite-btn {
     position: absolute;
     top: 6px;
     right: 6px;

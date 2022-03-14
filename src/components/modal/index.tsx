@@ -6,7 +6,7 @@ import { CSSTransition } from "react-transition-group";
 import "./styles.scss";
 
 import { Photo } from "../../types";
-import Favourite from "../favourite";
+import Favorite from "../favorite";
 import user from "../../assets/user.svg";
 import close from "../../assets/close.svg";
 import FooterItem from "./components/footerItem";
@@ -54,9 +54,9 @@ const Modal: FC<Props> = ({ data, show, onClose }) => {
             <div className="modal__right-side">
               <div className="wrap">
                 <div className="actions">
-                  {data && data.favourite != null && (
-                    <div className="favourite-btn">
-                      <Favourite item={data} visible />
+                  {data && data.favorite != null && (
+                    <div className="favorite-btn">
+                      <Favorite item={data} visible />
                     </div>
                   )}
 

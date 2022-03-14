@@ -1,7 +1,7 @@
 import React from "react";
 import type { FC } from "react";
 import { Photo } from "../../types";
-import Favourite from "../favourite";
+import Favorite from "../favorite";
 
 import "./styles.scss";
 
@@ -28,9 +28,9 @@ const GridItem: FC<Props> = ({ photo, openDialog }) => {
         aria-hidden="true"
       />
 
-      {photo.favourite != null && (
-        <div className="favourite-btn">
-          <Favourite item={photo} />
+      {photo.favorite != null && (
+        <div className="favorite-btn">
+          <Favorite item={photo} />
         </div>
       )}
     </div>

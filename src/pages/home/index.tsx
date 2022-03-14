@@ -16,7 +16,7 @@ const Home = () => {
   const checkFavoritesPhotos = (data: Photo[]): Photo[] => {
     return data.map((element) => ({
       ...element,
-      favourite: storage.findIndex((el: Photo) => el.id === element.id) > -1,
+      favorite: storage.findIndex((el: Photo) => el.id === element.id) > -1,
     }));
   };
 
