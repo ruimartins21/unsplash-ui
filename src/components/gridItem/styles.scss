@@ -1,0 +1,31 @@
+@import '../../styles';
+
+.grid-item {
+  position: relative;
+
+  &:hover .image {
+    opacity: 0.7;
+    cursor: zoom-in;
+
+    & ~ .favorite-btn .favorite {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .favorite-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 9;
+
+    span {
+      display: none;
+    }
+
+    @media (min-width: $md) {
+      top: 12px;
+      right: 12px;
+    }
+  }
+}

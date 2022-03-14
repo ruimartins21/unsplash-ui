@@ -1,0 +1,15 @@
+@import '../../styles';
+
+.container {
+  padding: 48px;
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+
+  .loading {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+  }
+}
