@@ -5,7 +5,7 @@
 [![Demo](https://img.shields.io/badge/Go-to_the_app-red.svg?style=flat-square)](https://inspiring-torvalds-636403.netlify.app/)
 
 ## Introduction 
-Welcome! This is an example of a React application with the goal of creating an alternate version of Unsplash. A simple SPA will be created based on the Unsplash website and will make some API calls to a public web API of [unsplash].
+Welcome! This is an example of a React application with the goal of creating an alternate version of [Unsplash]. A simple SPA will be created based on the Unsplash website and will make some API calls to a public web API of [unsplashAPI].
 
 ## Features
 The main feature of this project is to show random photos from unplash website and allow user to set some photos as favorites. Client-side caching has been deployed for selected user's favourite photos.
@@ -53,4 +53,5 @@ Before clone the repository locally, you will have to create your api key to be 
   $ yarn start # npm run start
 ```
 
-[unsplash]: <https://unsplash.com/documentation>
+[unsplashAPI]: <https://unsplash.com/documentation>
+[Unsplash]: <https://unsplash.com>
