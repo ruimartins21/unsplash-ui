@@ -34,7 +34,7 @@ export interface Photo {
       small: string;
     };
   };
-  favourite: boolean;
+  favorite: boolean;
 }
 
 export type PhotosResponse = {

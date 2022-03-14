@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./styles.scss";
 
 import logo from "../../assets/logo.svg";
-import favourite from "../../assets/favourite.svg";
+import favorite from "../../assets/favorite.svg";
 import gallery from "../../assets/gallery.svg";
 
 const Sidebar = () => {
@@ -24,7 +24,7 @@ const Sidebar = () => {
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           <li>
-            <img src={favourite} alt="Favorites" />
+            <img src={favorite} alt="Favorites" />
           </li>
         </NavLink>
       </ul>

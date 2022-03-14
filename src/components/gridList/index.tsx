@@ -38,7 +38,7 @@ const GridList: FC<Props> = ({ results }) => {
 
     const checking = {
       ...data,
-      favourite: storage.findIndex((el: Photo) => el.id === data.id) > -1,
+      favorite: storage.findIndex((el: Photo) => el.id === data.id) > -1,
     };
     openDialog(checking);
     setLoading(false);
